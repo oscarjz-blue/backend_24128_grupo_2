@@ -1,8 +1,9 @@
 // declaracion de constantes
 const express = require('express')
+const app = express()
+// constantes adicionales
 const path = require('path')
 const morgan = require('morgan')
-const app = express()
 
 //const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const usersRouterTest = require('../routes/usersTest')
@@ -27,7 +28,7 @@ app.use(usersRouter)
 // static files
 app.use(express.static(path.join(__dirname, "../public")));
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`)
 })
