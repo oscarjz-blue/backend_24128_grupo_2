@@ -1,3 +1,9 @@
+-- to create a new database
+CREATE DATABASE movies_db;
+
+-- to use database
+use movies_db;
+
 CREATE TABLE IF NOT EXISTS usuario (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -9,5 +15,7 @@ CREATE TABLE IF NOT EXISTS usuario (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )  ENGINE=INNODB;
 
+-- to show all tables
+show tables;
 
 DESCRIBE usuario;
