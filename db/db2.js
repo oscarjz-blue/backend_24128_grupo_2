@@ -13,7 +13,7 @@ if (PORT == 3000) {
     poolCon = poolLocal
 }
 
-if (process.env.PORT == 10000) {
+if (PORT == 10000) {
     console.log("Creating connection pool...")
     console.log('Conexion con base de datos en la nube')
     const poolNube = mysql.createPool({
