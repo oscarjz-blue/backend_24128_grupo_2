@@ -17,10 +17,10 @@ if (process.env.PORT == 10000) {
     console.log("Creating connection pool...")
     console.log('Conexion con base de datos en la nube')
     const poolNube = mysql.createPool({
-        host: 'sql113.infinityfree.com',
-        user: 'if0_36804421',
-        password: 'cursonode',
-        database: 'if0_36804421_movies_db'
+        host: 'blbi19fk4lrij7poczid-mysql.services.clever-cloud.com',
+        user: 'ur4ijn8gmbfvu9qs',
+        password: 'uXmQ7g4Yif6PfW0MWUPQ',
+        database: 'blbi19fk4lrij7poczid'
     })
     poolCon = poolNube
 }
