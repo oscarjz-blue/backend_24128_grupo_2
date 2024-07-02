@@ -15,6 +15,14 @@ CREATE TABLE IF NOT EXISTS usuario (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )  ENGINE=INNODB;
 
+CREATE TABLE IF NOT EXISTS movies (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title varchar(255) NOT NULL,
+  director varchar(255) NOT NULL,
+  year int(11) NOT NULL,
+  image varchar(255) DEFAULT NULL
+) ENGINE=InnoDB;  --DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
 -- to show all tables
 show tables;
 
