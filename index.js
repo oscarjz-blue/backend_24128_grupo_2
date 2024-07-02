@@ -11,6 +11,7 @@ const usersRouterTest = require('./routes/usersTest.js')
 const usersRouter = require('./routes/users.js')
 const moviesRouter = require('./routes/movies.js')
 const personasRoutes = require('./routes/personas.routes.js')
+const favoritosRouter = require('./routes/favoritos.js')
 
 // settings
 app.set("port", process.env.PORT || 3000);
@@ -44,6 +45,7 @@ app.use('/movies', moviesRouter)
 app.use('/test', usersRouterTest)
 app.use(usersRouter)
 app.use(personasRoutes); // para configurar las rutas dentro de personas primero es necesario importarlo arriba
+app.use('/favoritos', favoritosRouter)
 
 // static files
 app.use(express.json())

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABM Favoritos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesFavoritos.css">
+
+</head>
+<body>
+    <h1>Favoritos</h1>
+
+    <ul id="movieList"></ul> 
+
+    <h2>Agregar Favoritos</h2>
+    <form id="addMovieForm" enctype="multipart/form-data"> 
+        <input type="text" id="title" name="title" placeholder="Título" required>
+        <input type="text" id="director" name="director" placeholder="Director" required>
+        <input type="number" id="year" name="year" placeholder="Año" required>
+        <input type="file" id="image" name="image" accept="image/*">
+        <button type="submit">Agregar</button>
+    </form>
+
+   
+
+    
+    <script src="scriptFavoritos.js"></script>
+</body>
+</html>
