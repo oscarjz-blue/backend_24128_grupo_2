@@ -1,0 +1,56 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">EDITANDO UN USUARIO</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/edit/{{usuario.id}}" method="post">
+                    <div class="input-group mt-2">
+                        <label for="name" class="input-group-text">Nombre</label>
+                        <input class="form-control" type="text" name="name" id="name" value="{{usuario.name}}" placeholder="ejemplo: Leandro Hernan"
+                        autofocus required >
+                    </div>
+                     <div class="input-group mt-2">
+                        <label for="surname" class="input-group-text">Apellido</label>
+                        <input class="form-control" type="text" name="surname" id="surname" value="{{usuario.surname}}" placeholder="ejemplo: Caballero"
+                         required >
+                    </div>
+                     <div class="input-group mt-2">
+                        <label for="email" class="input-group-text">Correo</label>
+                        <input class="form-control" type="email" name="email" id="email" value="{{usuario.email}}" placeholder="ejemplo: leandro@gmail.com"  required >
+                    </div>
+                    <div class="input-group mt-2">
+                        <label for="password" class="input-group-text">Password</label>
+                        <input class="form-control" type="password" name="password" id="password" value="{{usuario.password}}"
+                         required >
+                    </div>
+                    <div class="input-group mt-2">
+                        <label for="role" class="input-group-text">Role</label>
+                         <select class="form-control" id="role" name="role" value="{{usuario.role}}"  required>
+                            <option value="USER">User</option>
+                            <option value="ADMIN">Admin</option>
+                         </select>
+                    </div>
+                     {{!--<input class="form-control" type="text" name="lastname" id="lastname" placeholder="ejemplo: Caballero"
+                         required >--}}  
+                    
+                    <div class="input-group mt-2">
+                        <label for="active" class="input-group-text">Active</label>
+                         <select class="form-control" id="active" name="active" value="{{usuario.active}}" required>
+                            <option value="1">Active</option>
+                            <option value="0">Inactive</option>
+                        </select>
+                    </div>
+                    {{!--<input class="form-control" type="text" name="lastname" id="lastname" placeholder="ejemplo: Caballero"
+                         required >--}} 
+                    <div class="form-group mt-4 d-grid gap-2">
+                        <button class="btn btn-success">Actualizar</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
