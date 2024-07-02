@@ -5,6 +5,9 @@
 # ABM Peliculas
 >>> https://backend-24128-grupo-2.onrender.com/peliculas.html
 
+# ABM Peliculas
+>>> https://backend-24128-grupo-2.onrender.com/favoritos.html
+
 # ABM Usuarios (Renderizado de HTML con Ejs)
 >>> https://backend-24128-grupo-2.onrender.com/user
 
