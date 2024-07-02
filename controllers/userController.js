@@ -1,7 +1,7 @@
 const pool = require('../db/db2.js');
 const renderUsers = async (req, res) => {
   const [rows] = await pool.query("SELECT * FROM usuario");
-  res.render("users", { users: rows });
+  res.render("users.ejs", { users: rows });
 };
 
 const createUsers = async (req, res) => {
@@ -15,7 +15,7 @@ const editUser = async (req, res) => {
   const [result] = await pool.query("SELECT * FROM usuario WHERE id = ?", [
     id,
   ]);
-  res.render("users_edit", { user: result[0] });
+  res.render("users_edit.ejs", { user: result[0] });
 };
 
 const updateUser = async (req, res) => {

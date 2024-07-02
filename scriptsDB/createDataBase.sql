@@ -23,7 +23,10 @@ CREATE TABLE IF NOT EXISTS movies (
   image varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB;  --DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+CREATE TABLE IF NOT EXISTS categorias (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  description varchar(100) NOT NULL
+) ENGINE=InnoDB;
+
 -- to show all tables
 show tables;
-
-DESCRIBE usuario;
