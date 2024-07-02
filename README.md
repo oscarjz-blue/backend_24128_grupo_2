@@ -3,11 +3,13 @@
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
 # ABM Peliculas
->>> https://backend-24128-grupo-2.onrender.com/
+>>> https://backend-24128-grupo-2.onrender.com/peliculas.html
 
-
-# ABM Usuarios
+# ABM Usuarios (Renderizado de HTML con Ejs)
 >>> https://backend-24128-grupo-2.onrender.com/user
+
+# ABM Usuarios (Renderizado de HTML con Hbs)
+>>> https://backend-24128-grupo-2.onrender.com/
 
 # Integrantes:
 - Maria Martinez
